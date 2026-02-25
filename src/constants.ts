@@ -19,25 +19,25 @@ export const SKILLS: SkillCategory[] = [
   {
     title: "Languages",
     items: [
-      { name: "C", description: "1", icon: "https://picsum.photos/seed/c/100/100"},
-      { name: "C++", description: "2", icon: "https://picsum.photos/seed/cpp/100/100"},
-      { name: "C#", description: "3", icon: "https://picsum.photos/seed/csharp/100/100"},
-      { name: "Python", description: "4", icon: "https://picsum.photos/seed/python/100/100"}
+      { name: "C", description: "ALgorithm", icon: "/img/Clogo.png"},
+      { name: "C++", description: "Algorithm", icon: "/img/C++logo.png"},
+      { name: "C#", description: "Unity Code", icon: "/img/C#logo.png"},
+      { name: "Python", description: "Using API", icon: "/img/Pythonlogo.png"}
     ]
   },
   {
     title: "Engines",
     items: [
-      { name: "Unity Engine", description: "Secondary Engine", icon: "https://picsum.photos/seed/unity/100/100" }
+      { name: "Unity Engine", description: "Game Engine", icon: "/img/Unitylogo.png" }
     ]
   },
   {
     title: "Tools & DevOps",
     items: [
-      { name: "Git", description: "Version Control", icon: "https://picsum.photos/seed/git/100/100" },
-      { name: "Visual Studio", description: "IDE", icon: "https://picsum.photos/seed/vs/100/100" },
-      { name: "Visual Studio Code", description: "IDE", icon: "https://picsum.photos/seed/vs/100/100" },
-      { name: "Notion", description: "Documentation", icon: "https://picsum.photos/seed/notion/100/100" }
+      { name: "GitHub", description: "Version Control", icon: "/img/Githublogo.png.png" },
+      { name: "Visual Studio", description: "IDE", icon: "/img/Vslogo.png" },
+      { name: "Visual Studio Code", description: "IDE", icon: "/img/Vselogo.png" },
+      { name: "Notion", description: "Documentation", icon: "/img/Notionlogo.png" }
     ]
   }
 ];
