@@ -18,6 +18,7 @@ import {
   FileText, 
   MessageSquare,
   Globe,
+  Youtube,
   Award,
   GraduationCap
 } from "lucide-react";
@@ -60,14 +61,11 @@ export default function App() {
           <div className="relative inline-block">
             <div className="w-32 h-32 rounded-full overflow-hidden mx-auto border-4 border-accent/20">
               <img 
-                src="https://picsum.photos/seed/dev/300/300" 
+                src="img/profilePic.jpeg"
                 alt="Profile" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
-            </div>
-            <div className="absolute -bottom-1 -right-1 bg-accent text-white text-xs px-3 py-1 rounded-full font-bold shadow-lg">
-              PRO
             </div>
           </div>
           
@@ -84,8 +82,8 @@ export default function App() {
             <a href={`mailto:${PROFILE.email}`} className="text-text-secondary hover:text-white transition-all hover:scale-110">
               <Mail size={24} />
             </a>
-            <a href={PROFILE.blog} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-white transition-all hover:scale-110">
-              <Globe size={24} />
+            <a href={PROFILE.youtube} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-white transition-all hover:scale-110">
+              <Youtube size={24} />
             </a>
           </div>
 
@@ -129,9 +127,9 @@ export default function App() {
                 <div className="flex gap-6 items-start">
                   <div className="w-24 h-24 rounded-2xl overflow-hidden bg-white/5 flex-shrink-0">
                     <img 
-                      src={`https://picsum.photos/seed/${project.id}/200/200`} 
+                      src={`/img/${project.id}icon.png`} 
                       alt={project.title}
-                      className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                      className="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity"
                       referrerPolicy="no-referrer"
                     />
                   </div>
@@ -230,20 +228,23 @@ export default function App() {
           <SectionHeader>Education & Awards</SectionHeader>
           <div className="space-y-4">
             {/* Education */}
-            <motion.div 
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="glass-card flex items-center gap-6"
-            >
-              <div className="p-4 bg-accent/10 rounded-2xl text-accent">
-                <GraduationCap size={32} />
-              </div>
-              <div>
-                <h3 className="font-bold text-lg">{EDUCATION.school} {EDUCATION.major}</h3>
-                <p className="text-sm text-text-secondary mt-1">{EDUCATION.period}</p>
-              </div>
-            </motion.div>
+            {EDUCATION.map((edu, index) => (
+              <motion.div 
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="glass-card flex items-center gap-6"
+              >
+                <div className="p-4 bg-accent/10 rounded-2xl text-accent">
+                  <GraduationCap size={32} />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg">{edu.school} {edu.major}</h3>
+                  <p className="text-sm text-text-secondary mt-1">{edu.period}</p>
+                </div>
+              </motion.div>
+            ))}
 
             {/* Awards */}
             <div className="grid grid-cols-1 gap-4">

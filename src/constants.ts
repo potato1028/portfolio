@@ -1,16 +1,16 @@
 import { Project, SkillCategory, Education, Award, Activity } from './types';
 
 export const PROFILE = {
-  name: "OOO",
+  name: "심기준",
   role: "게임 클라이언트 프로그래머",
-  email: "OOO@email.com",
-  phone: "010-XXXX-XXXX",
-  github: "https://github.com/username",
-  blog: "https://notion.so/username",
-  bio: "사용자 경험을 고민하는 개발자 OOO입니다.",
+  email: "ghgh10288@naver.com",
+  phone: "010-9936-9750",
+  github: "https://github.com/potato1028",
+  youtube: "https://www.youtube.com/@심기준-z3j",
+  bio: "사용자에게 의미 있는 경험을 주기 위해 노력하는 개발자 심기준입니다.",
   summaries: [
-    "주도적으로 문제를 해결하는 것을 좋아합니다.",
-    "실시간 렌더링 기술과 최적화에 관심이 많으며, 고성능 게임 엔진 개발을 목표로 하고 있습니다.",
+    "단순한 기능 구현이 아닌, 코드의 재사용성 효율성을 먼저 고려합니다.",
+    "디테일과 기본기를 끊임없이 탐구합니다.",
     "커뮤니케이션과 협업을 중요하게 생각하며 팀의 성장을 돕는 개발자가 되고 싶습니다."
   ]
 };
@@ -19,27 +19,24 @@ export const SKILLS: SkillCategory[] = [
   {
     title: "Languages",
     items: [
-      { name: "C++", description: "Advanced", icon: "https://picsum.photos/seed/cpp/100/100" },
-      { name: "C#", description: "Intermediate", icon: "https://picsum.photos/seed/csharp/100/100" },
-      { name: "HLSL", description: "Shader Programming", icon: "https://picsum.photos/seed/hlsl/100/100" }
+      { name: "C", description: "1", icon: "https://picsum.photos/seed/c/100/100"},
+      { name: "C++", description: "2", icon: "https://picsum.photos/seed/cpp/100/100"},
+      { name: "C#", description: "3", icon: "https://picsum.photos/seed/csharp/100/100"},
+      { name: "Python", description: "4", icon: "https://picsum.photos/seed/python/100/100"}
     ]
   },
   {
     title: "Engines",
     items: [
-      { name: "Unreal Engine 5", description: "Primary Engine", icon: "https://picsum.photos/seed/ue/100/100" },
-      { name: "Unity", description: "Secondary Engine", icon: "https://picsum.photos/seed/unity/100/100" },
-      { name: "DirectX 12", description: "Graphics API", icon: "https://picsum.photos/seed/dx12/100/100" }
+      { name: "Unity Engine", description: "Secondary Engine", icon: "https://picsum.photos/seed/unity/100/100" }
     ]
   },
   {
     title: "Tools & DevOps",
     items: [
       { name: "Git", description: "Version Control", icon: "https://picsum.photos/seed/git/100/100" },
-      { name: "Perforce", description: "Version Control", icon: "https://picsum.photos/seed/p4/100/100" },
-      { name: "Jira", description: "Project Management", icon: "https://picsum.photos/seed/jira/100/100" },
-      { name: "Jenkins", description: "CI/CD", icon: "https://picsum.photos/seed/jenkins/100/100" },
       { name: "Visual Studio", description: "IDE", icon: "https://picsum.photos/seed/vs/100/100" },
+      { name: "Visual Studio Code", description: "IDE", icon: "https://picsum.photos/seed/vs/100/100" },
       { name: "Notion", description: "Documentation", icon: "https://picsum.photos/seed/notion/100/100" }
     ]
   }
@@ -48,57 +45,66 @@ export const SKILLS: SkillCategory[] = [
 export const PROJECTS: Project[] = [
   {
     id: "project-1",
-    title: "Project Alpha",
-    description: "고퀄리티 그래픽의 3인칭 액션 RPG 게임",
-    period: "2023.03 ~ 2023.09 (6개월)",
+    title: "LeafTale",
+    description: "손 재활 및 발달 게임 플랫폼",
+    period: "2024.07 ~ 2024.11 (약 5개월)",
     team: "5인 팀 프로젝트",
-    tech: ["Unreal Engine 5", "C++", "GAS"],
-    role: "전투 시스템 및 스킬 시스템 구현",
+    tech: ["Unity", "C#", "LeapMotion SDK"],
+    role: "Unity와 LeapMotion SDK연동, 손 움직임 데이터 수집 후 게임 데이터로 활용, 총 5가지의 미니게임 로직 개발",
     links: {
-      github: "https://github.com/username/project-alpha",
-      video: "https://youtube.com/watch?v=example1"
+      github: "https://github.com/Danto7632/LeafTale?tab=readme-ov-file",
+      video: "https://www.youtube.com/watch?v=eUpXLGqR8mU"
     },
     achievements: [
-      "Gameplay Ability System(GAS)을 활용한 확장성 있는 스킬 시스템 설계",
-      "컴포넌트 기반 아키텍처를 도입하여 캐릭터 상태 머신 최적화",
-      "멀티스레딩을 이용한 대규모 적 AI 연산 분산 처리"
+      "게임화된 재활 : 재미있는 게임을 통해 지속적인 재활 동기 부여",
+      "실시간 분석 : LeapMotion을 통한 정밀한 손동작 추적 및 분석",
+      "손동작 데이터 시각화 : 게임 종료 후 백엔드 API를 통해 실시간으로 데이터를 전송, 웹 대시보드에서 확인가능"
     ],
-    troubleshooting: "프레임 드랍 문제를 해결하기 위해 프로파일링 툴을 사용하여 병목 지점을 파악했습니다. 불필요한 액터 틱을 비활성화하고 오브젝트 풀링을 적용하여 성능을 30% 향상시켰습니다."
+    troubleshooting: "센서의 미세한 떨림으로 인해 캐릭터가 의도치 않게 이동하거나, 1회의 동작이 프레임 단위로 중복 인식되어 게임 조작에 영향을 미치는 문제를 특정 제스쳐만 필터링하는 방식으로 떨림 문제를 해결하여 원활한 게임 플레이가 가능하도록 해결"
   },
   {
     id: "project-2",
-    title: "Project Beta",
-    description: "모바일 환경에 최적화된 캐주얼 퍼즐 게임",
-    period: "2022.10 ~ 2023.01 (4개월)",
-    team: "1인 프로젝트",
-    tech: ["Unity", "C#", "Addressables"],
-    role: "전체 게임 로직 및 UI/UX 개발",
+    title: "GDP",
+    description: "GDP는 G(게임) D(동계) P(프로젝트)의 약자로, 게임에 흥미를 가진 동아리 부원끼리 단기간에 완성한 창의적인 뱀서라이크 게임입니다.",
+    period: "2024.01.09 ~ 2024.02.29 (약 2개월)",
+    team: "2인 프로젝트",
+    tech: ["Unity", "C#", "Pixel Art"],
+    role: "전체 게임 로직(몹 스폰 알고리즘, 피격 판정, 플레이어 이동, 몹 이동) 및 게임 디자인",
     links: {
-      github: "https://github.com/username/project-beta",
-      video: "https://youtube.com/watch?v=example2"
+      github: "https://github.com/Danto7632/GDP",
+      video: "https://www.youtube.com/watch?v=w6NejB-W_To"
     },
     achievements: [
-      "Addressables System을 이용한 에셋 동적 로딩 및 메모리 관리 최적화",
-      "사용자 정의 쉐이더를 활용한 저사양 기기용 이펙트 구현",
-      "Firebase를 연동한 실시간 랭킹 시스템 구축"
+      "다양한 알고리즘 활용 : 원형 인덱싱을 이용한 몹 스폰 알고리즘 구현.",
+      "리소스 자체 제작 : 게임 기능 구현, 캐릭터 & 몹 & 아이템 & 배경 디자인까지 자체 개발",
     ],
-    troubleshooting: "모바일 기기에서 메모리 부족으로 인한 크래시 현상이 발생했습니다. 텍스처 압축 형식을 변경하고 에셋 참조 구조를 개선하여 메모리 점유율을 40% 절감했습니다."
+    troubleshooting: "몹의 스폰 위치가 단조롭고 예측 가능하여 게임의 긴장감과 몰입감이 저하되는 문제를 해결하기 위해, 모듈로 연산을 활용하여 원형 배열 알고리즘과 난수 오프셋을 적용하여, 맵 외곽 360 전 방향에서 예측 불가능하게 적이 생성도록 구현함으로써 플레이어의 몰입감을 극대화하는 결과를 얻었습니다."
   }
 ];
 
-export const EDUCATION: Education = {
-  school: "OOO대학교",
-  major: "컴퓨터공학과",
-  period: "2018.03 ~ 2024.02"
-};
+export const EDUCATION: Education[] = [
+  {
+    school: "검정고시",
+    major: "",
+    period: "2022 8월 합격"
+  },
+  {
+    school: "동양미래대학교",
+    major: "컴퓨터소프트웨어공학과 전문학사과정",
+    period: "2023.03 ~ 2026.02"
+  },
+  {
+    school: "동양미래대학교",
+    major: "인공지능소프트웨어학과 전공심화과정",
+    period: "2026.03 ~ "
+  }
+];
 
 export const AWARDS: Award[] = [
-  { title: "OOO 경진대회 대상 수상", date: "2023.11" },
-  { title: "OOO 공모전 우수상 수상", date: "2022.08" }
+  { title: "2024 동양미래 EXPO (제 42회 졸업작품 전시회) 대상", date: "2024.11" },
+  { title: "2024 LINC 3.0 캡스톤 디자인 경진대회 우수상", date: "2022.08" }
 ];
 
 export const ACTIVITIES: Activity[] = [
-  { title: "OOO 게임 개발 동아리 회장", period: "2022.03 ~ 2023.02" },
-  { title: "OOO 오픈소스 컨트리뷰션 활동", period: "2021.07 ~ 2021.12" }
+  { title: "동양미래대학교 컴퓨터소프트웨어공학과 전공동아리 EL 부원", period: "2023.04 ~ 2026.02" }
 ];
-
