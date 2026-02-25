@@ -61,7 +61,7 @@ export default function App() {
           <div className="relative inline-block">
             <div className="w-32 h-32 rounded-full overflow-hidden mx-auto border-4 border-accent/20">
               <img 
-                src="img/profilePic.jpeg"
+                src="/img/profilePic.jpeg"
                 alt="Profile" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
