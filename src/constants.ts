@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
     title: "LeafTale",
     description: "손 재활 및 발달 게임 플랫폼",
     period: "2024.07 ~ 2024.11 (약 5개월)",
-    team: "5인 팀 프로젝트",
+    team: "13인 팀 프로젝트",
     tech: ["Unity", "C#", "LeapMotion SDK"],
     role: "Unity와 LeapMotion SDK연동, 손 움직임 데이터 수집 후 게임 데이터로 활용, 총 5가지의 미니게임 로직 개발",
     links: {
