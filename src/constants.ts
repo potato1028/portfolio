@@ -21,7 +21,7 @@ export const SKILLS: SkillCategory[] = [
     items: [
       { name: "C", description: "ALgorithm", icon: "/img/Clogo.png"},
       { name: "C++", description: "Algorithm", icon: "/img/C++logo.png"},
-      { name: "C#", description: "Unity Code", icon: "/img/C#logo.png"},
+      { name: "C#", description: "Unity Code", icon: "/img/Cslogo.png"},
       { name: "Python", description: "Using API", icon: "/img/Pythonlogo.png"}
     ]
   },
@@ -34,9 +34,9 @@ export const SKILLS: SkillCategory[] = [
   {
     title: "Tools & DevOps",
     items: [
-      { name: "GitHub", description: "Version Control", icon: "/img/Githublogo.png.png" },
+      { name: "GitHub", description: "Version Control", icon: "/img/Githublogo.png" },
       { name: "Visual Studio", description: "IDE", icon: "/img/Vslogo.png" },
-      { name: "Visual Studio Code", description: "IDE", icon: "/img/Vselogo.png" },
+      { name: "Visual Studio Code", description: "IDE", icon: "/img/Vsclogo.png" },
       { name: "Notion", description: "Documentation", icon: "/img/Notionlogo.png" }
     ]
   }
@@ -86,7 +86,7 @@ export const EDUCATION: Education[] = [
   {
     school: "검정고시",
     major: "",
-    period: "2022 8월 합격"
+    period: "2022년 8월 합격"
   },
   {
     school: "동양미래대학교",
@@ -103,8 +103,4 @@ export const EDUCATION: Education[] = [
 export const AWARDS: Award[] = [
   { title: "2024 동양미래 EXPO (제 42회 졸업작품 전시회) 대상", date: "2024.11" },
   { title: "2024 LINC 3.0 캡스톤 디자인 경진대회 우수상", date: "2022.08" }
-];
-
-export const ACTIVITIES: Activity[] = [
-  { title: "동양미래대학교 컴퓨터소프트웨어공학과 전공동아리 EL 부원", period: "2023.04 ~ 2026.02" }
 ];
