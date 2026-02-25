@@ -22,7 +22,7 @@ import {
   X,
   MousePointerClick // 클릭 안내용 아이콘 추가
 } from "lucide-react";
-import { PROFILE, PROJECTS, SKILLS, EDUCATION, AWARDS } from "./constants";
+import { PROFILE, PROJECTS, SKILLS, EDUCATION, AWARDS, ACTIVITIES } from "./constants";
 
 const SectionHeader = ({ children }: { children: React.ReactNode }) => (
   <h2 className="text-accent font-bold text-xl mb-6 tracking-wider uppercase border-l-4 border-accent pl-4">
@@ -265,6 +265,23 @@ export default function App() {
                     <h3 className="text-base font-semibold">{award.title}</h3>
                   </div>
                   <span className="text-sm text-text-secondary">{award.date}</span>
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="space-y-4">
+              <h4 className="text-sm font-bold text-text-secondary uppercase tracking-widest px-4">Extra-Curricular</h4>
+              {ACTIVITIES.map((activity, index) => (
+                <motion.div 
+                  key={index}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="glass-card p-6 flex justify-between items-center"
+                >
+                  <span className="text-base text-white/90 font-medium">{activity.title}</span>
+                  <span className="text-sm text-text-secondary">{activity.period}</span>
                 </motion.div>
               ))}
             </div>

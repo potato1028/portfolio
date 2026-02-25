@@ -104,3 +104,7 @@ export const AWARDS: Award[] = [
   { title: "2024 동양미래 EXPO (제 42회 졸업작품 전시회) 대상", date: "2024.11" },
   { title: "2024 LINC 3.0 캡스톤 디자인 경진대회 우수상", date: "2022.08" }
 ];
+
+export const ACTIVITIES: Activity[] = [
+  { title: "NYPC(Nexon Youth Programming Challenge) Online Round Certificate 참여", period: "2024.07 ~ 2024.08" }
+];
