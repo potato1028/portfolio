@@ -325,7 +325,7 @@ export default function App() {
             <a href="#education" className="hover:text-white">Education</a>
           </div>
           <p className="text-[10px] text-text-secondary/50">
-            © 2024 {PROFILE.name}. Built with React & Tailwind CSS.
+            © 2026 {PROFILE.name}. Built with React & Tailwind CSS.
           </p>
         </footer>
       </main>
