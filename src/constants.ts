@@ -120,7 +120,9 @@ export const PROJECTS: Project[] = [
     team: "1인 개인 프로젝트",
     tech: ["Unity", "C#"],
     role: "Raycast 기반 독자적 충돌 처리 및 이동 시스템 구현, Waypoints 기반 플랫폼 이동 로직 개발",
-    links: {},
+    links: {
+      github : "https://github.com/potato1028/GGame"
+    },
     achievements: [
       "Unity 내장 물리 엔진(Rigidbody2D)에 의존하지 않는 Raycast 기반 독자적 충돌/이동 시스템 구현",
       "경사면 오르내리기 및 벽면 충돌 제어 로직 작성",
