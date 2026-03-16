@@ -105,7 +105,9 @@ export const PROJECTS: Project[] = [
     team: "1인 개인 프로젝트",
     tech: ["Python", "Gemini API"],
     role: "유튜브 오디오 데이터 추출 및 타임라인 동기화, Gemini API 연동을 통한 번역 파이프라인 구축",
-    links: {},
+    links: {
+      github : "https://github.com/potato1028/TranslateVideo/tree/main"
+    },
     achievements: [
       "유튜브 영상 오디오 데이터 추출 및 타임라인 동기화 로직 개발",
       "Gemini API를 연동하여 추출된 음성/자막 데이터를 번역본으로 자동 생성하는 파이프라인 구축"
