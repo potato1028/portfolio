@@ -6,7 +6,6 @@ export const PROFILE = {
   email: "ghgh10288@naver.com",
   phone: "010-9936-9750",
   github: "https://github.com/potato1028",
-  youtube: "https://www.youtube.com/@심기준-z3j",
   bio: "사용자에게 의미 있는 경험을 주기 위해 노력하는 개발자 심기준입니다.",
   summaries: [
     "단순한 기능 구현이 아닌, 코드의 재사용성 효율성을 먼저 고려합니다.",
@@ -89,7 +88,8 @@ export const PROJECTS: Project[] = [
     tech: ["Unity", "C#", "Spring", "MySQL", "Android Studio", "Xcode"],
     role: "PM으로서 프로젝트 총괄, 사용자 위치 기반 날씨/디바이스 API 연동, 시드 기반 절차적 맵 생성 알고리즘 개발",
     links: {
-      github: "https://github.com/DMU-RoamAfterAll/Roam_Game"
+      github: "https://github.com/DMU-RoamAfterAll/Roam_Game",
+      video: "https://youtu.be/d6sdcJ38_Uk"
     },
     achievements: [
       "Android 및 iOS 플랫폼 대응 모바일 기능(걸음 수, 시간) 및 날씨 API 연동으로 동적 인게임 이벤트 구현",
