@@ -92,9 +92,6 @@ export default function App() {
             <a href={`mailto:${PROFILE.email}`} className="text-text-secondary hover:text-white transition-all hover:scale-110">
               <Mail size={24} />
             </a>
-            <a href={PROFILE.youtube} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-white transition-all hover:scale-110">
-              <Youtube size={24} />
-            </a>
           </div>
 
           <p className="text-text-secondary text-lg leading-relaxed max-w-xl mx-auto">
