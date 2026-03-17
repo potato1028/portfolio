@@ -106,7 +106,8 @@ export const PROJECTS: Project[] = [
     tech: ["Python", "Gemini API"],
     role: "유튜브 오디오 데이터 추출 및 타임라인 동기화, Gemini API 연동을 통한 번역 파이프라인 구축",
     links: {
-      github : "https://github.com/potato1028/TranslateVideo/tree/main"
+      github : "https://github.com/potato1028/TranslateVideo/tree/main",
+      video : "https://youtu.be/OVYMIWnl-uA"
     },
     achievements: [
       "유튜브 영상 오디오 데이터 추출 및 타임라인 동기화 로직 개발",
@@ -123,7 +124,8 @@ export const PROJECTS: Project[] = [
     tech: ["Unity", "C#"],
     role: "Raycast 기반 독자적 충돌 처리 및 이동 시스템 구현, Waypoints 기반 플랫폼 이동 로직 개발",
     links: {
-      github : "https://github.com/potato1028/GGame"
+      github : "https://github.com/potato1028/GGame",
+      video : "https://youtu.be/URKfdZl0PCA"
     },
     achievements: [
       "Unity 내장 물리 엔진(Rigidbody2D)에 의존하지 않는 Raycast 기반 독자적 충돌/이동 시스템 구현",
