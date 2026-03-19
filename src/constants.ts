@@ -99,8 +99,8 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "project-4",
-    title: "게임 개발 맞춤형 AI 번역 툴",
-    description: "해외 게임 튜토리얼 학습 시 발생하는 언어 장벽을 타파하기 위해 개발한 실시간 AI 자막 툴",
+    title: "AI 유튜브 자막 생성기",
+    description: "해외 강의 학습 시 발생하는 언어 장벽을 타파하기 위해 개발한 실시간 AI 자막 툴",
     period: "2026.02 (약 1개월)",
     team: "1인 개인 프로젝트",
     tech: ["Python", "Gemini API"],
