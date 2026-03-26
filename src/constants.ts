@@ -155,8 +155,8 @@ export const EDUCATION: Education[] = [
 ];
 
 export const AWARDS: Award[] = [
-  { title: "2024 동양미래 EXPO (제 42회 졸업작품 전시회) 대상", date: "2024.11" },
-  { title: "2024 LINC 3.0 캡스톤 디자인 경진대회 우수상", date: "2022.08" }
+  { title: "2024 동양미래 EXPO (제 42회 졸업작품 전시회) 대상", date: "2024.10" },
+  { title: "2024 LINC 3.0 캡스톤 디자인 경진대회 우수상", date: "2024.11" }
 ];
 
 export const ACTIVITIES: Activity[] = [
